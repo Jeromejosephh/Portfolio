@@ -10,7 +10,7 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
-    background-image: url('/Users/jeromejoseph/Downloads/blue-black-abstract-background');
+    background-image: url('Images/websitebackground.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,9 +18,29 @@ body {
     margin: 0;
 }
 
+.container {
+    width: 105%;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.right-image {
+    float: right;
+    margin-left: 80px;
+    width: 1200px;
+    height: auto;
+}
+
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
 /* Navbar styling */
 nav {
-    background-color: #333;
+    background-color: #0e0e0e;
     padding: 1rem;
     text-align: center;
 }
@@ -52,7 +72,7 @@ h1, h2 {
 
 #home {
     background: url('your-hero-image.jpg') no-repeat center center/cover;
-    height: 100vh;
+    height: 50vh;
     color: white;
     display: flex;
     justify-content: center;
